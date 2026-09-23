@@ -53,3 +53,47 @@ Consistency is the single most important factor in competitive programming. **Co
                │  - Dynamic CF Badges  │
                │  - Flame Streak View  │
                └───────────────────────┘
+Markdown
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone or Download the Repository:**
+   ```bash
+   git clone https://github.com/Siddharth-devsih/codeforces-potd.git
+Open Extensions in Chrome:
+
+Go to chrome://extensions in your address bar.
+
+Enable Developer mode using the toggle in the top-right corner.
+
+Load the Extension:
+
+Click the Load unpacked button in the top-left corner.
+
+Select the codeforces-potd folder.
+
+🎮 How to Use
+Initial Setup: Click the Codeforces POTD icon in your browser toolbar, enter your Codeforces handle (e.g., tourist), and click Save & Generate POTD.
+
+Solve the Daily Problem: Click Solve on Codeforces to open the problem directly and submit your solution.
+
+Verify & Build Your Streak: After getting an Accepted (OK) verdict, reopen the extension popup and click Check Status. Your streak counter (🔥) will increment for the day.
+
+Reroll (Optional): If you want a different problem within your rating bracket, click New Problem.
+
+🛠️ Tech Stack & APIs
+Chrome Manifest V3 APIs: chrome.storage.local, chrome.alarms, chrome.notifications, chrome.tabs
+
+Codeforces REST Endpoints: user.info, user.status, problemset.problems
+
+📄 License
+This project is licensed under the MIT License.
+
+
+---
+
+### How to Save it:
+1. Click the green **Commit changes...** button at the top right of your screen.
+2. Click **Commit changes** in the small dialog box that appears.
+3. Return to the main page of your repository—your README will now show the complete installation and usage instructions.
