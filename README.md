@@ -1,35 +1,26 @@
-<div align="center">
-
 # ⚡ Codeforces POTD
 
-**A high-performance Chrome extension that generates a daily, rating-targeted competitive programming challenge with automated streak tracking.**
-
-[![Manifest V3](https://img.shields.io/badge/Chrome-Manifest_V3-4285F4?style=flat-square&logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/intro/)
-[![Codeforces API](https://img.shields.io/badge/API-Codeforces-1F8ACB?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/apiHelp)
-[![License: MIT](https://img.shields.io/badge/License-MIT-emerald?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/Siddharth-devsih/codeforces-potd/pulls)
-
-</div>
+A lightweight, high-performance Chrome Extension (Manifest V3) that delivers a personalized daily competitive programming challenge based on your current Codeforces rating with automated streak tracking.
 
 ---
 
 ## 🎯 Overview
 
-Consistency is the single most important factor in competitive programming. **Codeforces POTD** automates your daily practice by serving a curated daily problem within your active growth bracket (`Rating` to `Rating + 200`), tracking your consistency with an automated daily solve streak.
+Consistency is the single most important factor in competitive programming. **Codeforces POTD** automates your daily practice by serving a curated daily problem within your active growth bracket (`Rating` to `Rating + 200`), eliminating decision fatigue and tracking your consistency with an automated daily solve streak.
 
 ---
 
 ## ✨ Key Features
 
-- **🎯 Targeted Difficulty Bracket:** Automatically reads your current rating via the Codeforces REST API and serves problems in your `[R, R + 200]` zone.
-- **🔥 Consecutive Solve Streaks:** Tracks consecutive solve days automatically when you click **Check Status** after submission.
-- **⚡ Built for Performance:**
-  - **Payload Compression:** Strips unneeded metadata from CF problem sets, slashing storage usage by **~85%** (from ~4MB to ~600KB).
+- **🎯 Targeted Difficulty Bracket:** Automatically fetches your active rating via the Codeforces API and serves problems in your `[Rating, Rating + 200]` zone.
+- **🔥 Consecutive Solve Streaks:** Tracks consecutive daily solves automatically when you click **Check Status** after submission.
+- **⚡ Performance Optimized:**
+  - **Payload Compression:** Strips unnecessary metadata from Codeforces problem sets, reducing storage footprint by ~85% (from ~4MB to ~600KB).
   - **Incremental Syncing:** Caches solved problem IDs locally; only queries your most recent submissions instead of fetching entire account histories.
   - **Debounced Triggers:** Prevents duplicate network requests during site navigation.
-- **🔔 Actionable System Notifications:** Scheduled alarms prompt you at 6:00 AM daily. Clicking the alert opens the challenge immediately in a new tab.
+- **🔔 Daily Morning Notifications:** Scheduled alarms prompt you at 6:00 AM daily. Clicking the notification opens the problem immediately in a new tab.
 - **🎨 Dynamic Rank Theming:** Problem badges automatically match official Codeforces rank divisions (Newbie, Pupil, Specialist, Expert, Master, Grandmaster).
-- **🎲 One-Click Reroll:** Instantly draw another unsolved problem in your rating band if you need a different topic.
+- **🎲 One-Click Reroll:** Instantly draw another unsolved problem in your rating band if you want a different challenge.
 
 ---
 
@@ -53,3 +44,20 @@ Consistency is the single most important factor in competitive programming. **Co
                │  - Dynamic CF Badges  │
                │  - Flame Streak View  │
                └───────────────────────┘
+```
+
+---
+
+## 🎮 How to Use
+
+### 1. Load the Extension in Chrome
+1. Open Google Chrome and go to `chrome://extensions`.
+2. Turn on **Developer mode** in the top-right corner.
+3. Click **Load unpacked** in the top-left corner.
+4. Select your `codeforces-potd` folder.
+
+### 2. Daily Workflow
+1. **Set Handle:** Click the **Codeforces POTD** icon in your browser toolbar, enter your Codeforces handle (e.g., `tourist`), and click **Save & Generate POTD**.
+2. **Solve the Problem:** Click **Solve on Codeforces** to open and solve the problem directly on the site.
+3. **Verify Streak:** Once your submission receives an **Accepted (OK)** verdict, open the extension popup and click **Check Status**. Your streak counter (`🔥`) will automatically increment.
+4. **Reroll (Optional):** If you prefer a different challenge within your rating bracket, click **New Problem**
